@@ -13,6 +13,7 @@ List<GuestbookVo> list = new GuestbookDao().findAll();
 <title>방명록</title>
 </head>
 <body>
+	<h1>방명록 예제</h1>
 	<form action="/guestbook01/insert.jsp" method="post">
 		<table border=1 width=500>
 			<tr>
@@ -36,8 +37,7 @@ List<GuestbookVo> list = new GuestbookDao().findAll();
 		for (GuestbookVo vo : list) {
 		%>
 		<tr>
-			<td><%= cnt-- %>
-			</td>
+			<td><%= cnt-- %></td>
 			<td><%=vo.getName()%></td>
 			<td><%=vo.getRegDate()%></td>
 			<td><a href="/guestbook01/deleteform.jsp?no=<%=vo.getNo()%>">삭제</a></td>
