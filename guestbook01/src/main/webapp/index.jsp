@@ -36,7 +36,7 @@ List<GuestbookVo> list = new GuestbookDao().findAll();
 		for (GuestbookVo vo : list) {
 		%>
 		<tr>
-			<td><% cnt--; %>
+			<td><%= cnt-- %>
 			</td>
 			<td><%=vo.getName()%></td>
 			<td><%=vo.getRegDate()%></td>

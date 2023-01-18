@@ -4,7 +4,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%
-List<EmaillistVo> list = new EmaillistDao().findAll();
+List<EmaillistVo> list = (List<EmaillistVo>)request.getAttribute("list");
 %>
 <html>
 <head>
@@ -32,12 +32,13 @@ List<EmaillistVo> list = new EmaillistDao().findAll();
 			<td><%=vo.getEmail() %></td>
 		</tr>
 	</table>
+	<br>
 	<%
 		}
 	%>
 	<br>
 	<p>
-		<a href="/emaillist01/form.jsp">새메일 등록하기</a>
+		<a href="/emaillist02/el?a=form">새메일 등록하기</a>
 	</p>
 	<br>
 </body>

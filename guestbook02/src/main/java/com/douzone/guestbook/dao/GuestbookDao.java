@@ -23,7 +23,7 @@ public class GuestbookDao {
     try {
       conn = getConnection();
 
-      String sql = "select no, name, password, message, reg_date from guestbook order by no asc";
+      String sql = "select no, name, password, message, reg_date from guestbook order by no desc";
       pstmt = conn.prepareStatement(sql);
 
       rs = pstmt.executeQuery();

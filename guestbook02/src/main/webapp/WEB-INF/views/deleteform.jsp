@@ -10,7 +10,7 @@ String no = request.getParameter("no");
 <title>방명록</title>
 </head>
 <body>
-	<form method="post" action="/guestbook01/delete.jsp">
+	<form method="post" action="/guestbook02/gb?a=delete">
 		<input type='hidden' name="no" value="<%=no%>">
 		<table>
 			<tr>
