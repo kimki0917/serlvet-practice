@@ -9,14 +9,6 @@
     <servlet-name>HelloServlet</servlet-name>
     <url-pattern>/hello</url-pattern>
   </servlet-mapping>
-  <welcome-file-list>
-    <welcome-file>index.html</welcome-file>
-    <welcome-file>index.htm</welcome-file>
-    <welcome-file>index.jsp</welcome-file>
-    <welcome-file>default.html</welcome-file>
-    <welcome-file>default.htm</welcome-file>
-    <welcome-file>default.jsp</welcome-file>
-  </welcome-file-list>
   <servlet>
     <description></description>
     <display-name>CookieServlet</display-name>
@@ -26,5 +18,25 @@
   <servlet-mapping>
     <servlet-name>CookieServlet</servlet-name>
     <url-pattern>/cookie</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>LifeCycleServlet</display-name>
+    <servlet-name>LifeCycleServlet</servlet-name>
+    <servlet-class>com.douzone.helloweb.controller.LifeCycleServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LifeCycleServlet</servlet-name>
+    <url-pattern>/lc</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>BoardController</display-name>
+    <servlet-name>BoardController</servlet-name>
+    <servlet-class>com.douzone.helloweb.controller.BoardController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BoardController</servlet-name>
+    <url-pattern>/board</url-pattern>
   </servlet-mapping>
 </web-app>
